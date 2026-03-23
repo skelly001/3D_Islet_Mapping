@@ -51,6 +51,7 @@ rsconnect/
 
 ############ User Defined ######################################
 
+
 *.csv
 *.tif
 *.tiff
@@ -59,6 +60,7 @@ rsconnect/
 *.xlsx
 *.RData
 *.rds
+output/RD0-3D_spatial_proteomics/*
 
 
 # azimuth snakemake files  
