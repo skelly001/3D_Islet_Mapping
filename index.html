@@ -79,6 +79,10 @@ section { padding: var(--section-gap) 0; }
   font-size: clamp(1rem, 2vw, 1.35rem); color: var(--text-secondary);
   font-style: italic; margin-bottom: 0.8rem;
 }
+.hero .byline {
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem); color: var(--text-secondary);
+  letter-spacing: 0.05em; font-weight: 500; margin-bottom: 0.5rem;
+}
 .hero .rule {
   width: 80px; height: 2px; margin: 1.8rem auto;
   background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
@@ -380,6 +384,7 @@ footer .links a { margin: 0 0.8rem; }
     <h1 class="reveal">Pseudo-Single-Cell Spatial Proteomics of Human Pancreatic Islets</h1>
     <div class="rule reveal reveal-delay-1"></div>
     <p class="subtitle reveal reveal-delay-2">2,215 protein abundance maps at cellular resolution</p>
+    <p class="byline reveal reveal-delay-2">Shane S. Kelly</p>
   </div>
   <a href="#overview" class="scroll-cue" aria-label="Scroll down">&#8964;</a>
 </section>
@@ -511,7 +516,7 @@ footer .links a { margin: 0 0.8rem; }
       <div class="pipeline-card">
         <div class="badge">3</div>
         <h4>Cell Type Assignment</h4>
-        <div class="tool">IF RGB Classification</div>
+        <div class="tool">IF Classification</div>
         <div class="thumb contain"><img src="output/RD1-ROI_mapping_and_cell_type_assignment/cell_type_assignment.png" alt="Cell type classification" loading="lazy"></div>
       </div>
       <div class="pipeline-arrow">&#10132;</div>
@@ -526,7 +531,7 @@ footer .links a { margin: 0 0.8rem; }
         <div class="badge">5</div>
         <h4>MS + RNA-Seq</h4>
         <div class="tool">Azimuth / Seurat</div>
-        <div class="thumb"><img src="data/images/pancreasumap.png" alt="Azimuth pancreas reference UMAP" loading="lazy"></div>
+        <div class="thumb contain"><img src="data/images/pancreasumap.png" alt="Azimuth pancreas reference UMAP" loading="lazy"></div>
       </div>
       <div class="pipeline-arrow">&#10132;</div>
       <div class="pipeline-card">
