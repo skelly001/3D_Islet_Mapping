@@ -238,8 +238,11 @@ section { padding: var(--section-gap) 0; }
 .pipeline-card .thumb {
   width: 100%; aspect-ratio: 1; border-radius: 4px; overflow: hidden;
   background: var(--bg-primary); border: 1px solid var(--border-subtle);
+  margin-top: auto;
 }
 .pipeline-card .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.pipeline-card .thumb.contain { background: #fff; }
+.pipeline-card .thumb.contain img { object-fit: contain; }
 /* ========== SECTION 5: MARKER SHOWCASE ========== */
 .showcase-section { background: var(--bg-secondary); }
 .showcase-panel {
@@ -509,7 +512,7 @@ footer .links a { margin: 0 0.8rem; }
         <div class="badge">3</div>
         <h4>Cell Type Assignment</h4>
         <div class="tool">IF RGB Classification</div>
-        <div class="thumb"><img src="output/RD1-ROI_mapping_and_cell_type_assignment/cell_type_assignment.png" alt="Cell type classification" loading="lazy"></div>
+        <div class="thumb contain"><img src="output/RD1-ROI_mapping_and_cell_type_assignment/cell_type_assignment.png" alt="Cell type classification" loading="lazy"></div>
       </div>
       <div class="pipeline-arrow">&#10132;</div>
       <div class="pipeline-card">
@@ -523,14 +526,14 @@ footer .links a { margin: 0 0.8rem; }
         <div class="badge">5</div>
         <h4>MS + RNA-Seq</h4>
         <div class="tool">Azimuth / Seurat</div>
-        <div class="thumb"><img src="output/RD5-final_protein_maps/islet_protein_markers.png" alt="Islet protein markers" loading="lazy"></div>
+        <div class="thumb"><img src="data/images/pancreasumap.png" alt="Azimuth pancreas reference UMAP" loading="lazy"></div>
       </div>
       <div class="pipeline-arrow">&#10132;</div>
       <div class="pipeline-card">
         <div class="badge">6</div>
         <h4>Protein Maps</h4>
         <div class="tool">Cell-Type Adjusted</div>
-        <div class="thumb"><img src="output/RD5-final_protein_maps/final_protein_maps/INS_P01308.png" alt="INS protein map" loading="lazy"></div>
+        <div class="thumb contain"><img src="output/RD5-final_protein_maps/final_protein_maps/INS_P01308.png" alt="INS protein map" loading="lazy"></div>
       </div>
     </div>
   </div>
